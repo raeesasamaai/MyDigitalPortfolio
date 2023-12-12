@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap css -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<!-- Style css -->
+<link rel="stylesheet" href="Home.css">
+<!--Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<!--Icons-->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+<title>Home</title>
+</head>
+<body class="vh-100" >
+<!-- Navbar -->
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top header">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand fs-4" href="#Home"><img src="Images/Logo.png" alt="Bootstrap" width="67"></a>
+      <!-- Toggle Btn -->
+      <button class="navbar-toggler shadow-none border-0" type of="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- SideBar -->
+      <div class="sidebar offcanvas offcanvas-start color" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <!-- SideBar Header -->  
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="logo" src="Images/Logo.png" alt="Bootstrap" width="67"></h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>        
+        <!-- SideBar Body --> 
+        <div class="offcanvas-body p-4 p-lg-0">
+          <ul class="navbar-nav justify-content-end align-items-start fs-5 flex-grow-1 pe-3">
+            <li class="nav-item mx-2">
+              <a class="nav-link active" aria-current="page" href="#Home" onclick="closeMenuOnSmallScreen(this)">Home</a>
+            </li>
+			 <li class="nav-item mx-2">
+              <a class="nav-link" href="#MySkills" onclick="closeMenuOnSmallScreen(this)">My Skills</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#MyWork" onclick="closeMenuOnSmallScreen(this)">My Work</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#About" onclick="closeMenuOnSmallScreen(this)">About</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link" href="#Contact" onclick="closeMenuOnSmallScreen(this)">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="wrapper">
+		<div id="stars"></div>
+		<div id="stars2"></div>
+		<div id="stars3"></div>
+	</div>
+</header>	
+<!--------------------- Home Section Start ------------------------->
+<section class="home-section" id="Home">
+  <div class="container px-4 text-left border-white align-middle">
+    <div class="row gx-5">
+      <div class="col-md-6 text-top">
+        <div class="p-3 hero-info animationLeft">
+          <h3>Hello, I am</h3>
+          <h1>Raeesa Samaai</h1>
+          <h3>I am a <span id="changing-text">UI/UX Designer</span></h3>
+          <p>From Cape Town, South Africa</p>
+         <div class="social-icons">
+					<a href="https://www.facebook.com/profile.php?id=100083770120554&mibextid=ZbWKwL" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></a>
+					<a href="https://www.instagram.com/raeesa_samaai/" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+					<a href="https://github.com/raeesasamaai"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"/></svg></a>
+					<a href="https://www.behance.net/raeesasamaai24"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M186.5 293c0 19.3-14 25.4-31.2 25.4h-45.1v-52.9h46c18.6.1 30.3 7.8 30.3 27.5zm-7.7-82.3c0-17.7-13.7-21.9-28.9-21.9h-39.6v44.8H153c15.1 0 25.8-6.6 25.8-22.9zm132.3 23.2c-18.3 0-30.5 11.4-31.7 29.7h62.2c-1.7-18.5-11.3-29.7-30.5-29.7zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM271.7 185h77.8v-18.9h-77.8V185zm-43 110.3c0-24.1-11.4-44.9-35-51.6 17.2-8.2 26.2-17.7 26.2-37 0-38.2-28.5-47.5-61.4-47.5H68v192h93.1c34.9-.2 67.6-16.9 67.6-55.9zM380 280.5c0-41.1-24.1-75.4-67.6-75.4-42.4 0-71.1 31.8-71.1 73.6 0 43.3 27.3 73 71.1 73 33.2 0 54.7-14.9 65.1-46.8h-33.7c-3.7 11.9-18.6 18.1-30.2 18.1-22.4 0-34.1-13.1-34.1-35.3h100.2c.1-2.3.3-4.8.3-7.2z"/></svg></a>
+				</div>
+        </div>
+      </div>
+      <div class="col-md-6 floatImage">
+        <div class="p-3 floatImageWidth animationRight">
+          <img class="img-fluid" src="Images/astronautP.png" alt="Astronaut Image">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Add Typed.js -->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+  let type = new Typed("#changing-text",{
+    strings: ['Web Developer', 'UI/UX Designer','Video Editor'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    loop: true,
+  })
+</script>
+<!--------------------- Home Section End ------------------------->
+<hr>
+<!--------------------- Skills Section Start ------------------------->
+<section id="MySkills">
+<div>
+<div class="row g-4 top">
+        <div class="col-12">
+          <div class="section-text text-center">MY SKILLS</div>
+        </div>
+      </div>
+<div class="skills-container bottom">
+	<div class="progress-card">
+		<div class="progress-circle">
+			<div class="progress-content">
+				<h5 class="progText" data-count="96">0</h5>
+			</div>
+	<div class="progress"></div>
+	</div>
+	<h5>HTML</h5>
+	</div>	
+	<div class="progress-card">
+		<div class="progress-circle">
+			<div class="progress-content">
+				<h5 class="progText" data-count="90">0</h5>
+			</div>
+	<div class="progress"></div>
+	</div>
+	<h5>CSS</h5>
+	</div>	
+	<div class="progress-card">
+		<div class="progress-circle">
+			<div class="progress-content">
+				<h5 class="progText" data-count="72">0</h5>
+			</div>
+	<div class="progress"></div>
+	</div>
+	<h5>SQL</h5>
+	</div>	
+	<div class="progress-card">
+		<div class="progress-circle">
+			<div class="progress-content">
+				<h5 class="progText" data-count="69">0</h5>
+			</div>
+	<div class="progress"></div>
+	</div>
+	<h5>C#</h5>
+	</div>
+	<br>
+	<div class="progress-card">
+		<div class="progress-circle">
+			<div class="progress-content">
+				<h5 class="progText" data-count="61">0</h5>
+			</div>
+	<div class="progress"></div>
+	</div>
+	<h5>JavaScript</h5>
+	</div>	
+	<div class="progress-card">
+		<div class="progress-circle">
+			<div class="progress-content">
+				<h5 class="progText" data-count="83">0</h5>
+			</div>
+	<div class="progress"></div>
+	</div>
+	<h5>Bootstrap</h5>
+	</div>	
+	<div class="progress-card">
+		<div class="progress-circle">
+			<div class="progress-content">
+				<h5 class="progText" data-count="94">0</h5>
+			</div>
+	<div class="progress"></div>
+	</div>
+	<h5>Photoshop</h5>
+	</div>	
+	<div class="progress-card">
+		<div class="progress-circle">
+			<div class="progress-content">
+				<h5 class="progText" data-count="89">89</h5>
+			</div>
+	<div class="progress"></div>
+	</div>
+	<h5>Video Editing</h5>
+	</div>	
+</div>
+</div>
+<script>
+  const progText = document.querySelectorAll(".progText");
+  const progress = document.querySelectorAll(".progress");
+  const progContainer = document.querySelector(".skills-container");
+  let bol = false;
+
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > progContainer.offsetTop - 600 && !bol) {
+      for (let i = 0; i < progText.length; i++) {
+        progText[i].innerText = 0;
+        let count = 0;
+
+        progress[i].style.transformOrigin = "bottom center";
+        progress[i].style.transform = "scaleY(0)";
+        progress[i].style.bottom = "0";
+
+        function updateCount() {
+          const target = parseInt(progText[i].dataset.count);
+
+          if (count < target) {
+            count++;
+            progText[i].innerText = count;
+            progress[i].style.transform = `scaleY(${count / 100})`;
+            setTimeout(updateCount, 50);
+          } else {
+            progText[i].innerText = target + "%";
+            progress[i].style.transform = `scaleY(${target / 100})`;
+          }
+        }
+
+        updateCount();
+        bol = true;
+      }
+    }
+  });
+</script>
+</section>
+<!--------------------- Skills Section End ------------------------->
+<!--------------------- Work Section Start ------------------------->
+<section id="MyWork">
+  <div class="container-width work-section card-container">
+    <div class="container mt-5">
+		<div class="row g-4">
+        <div class="col-12">
+          <div class="section-text text-center top">MY WORK</div>
+        </div>
+      </div>
+      <ul class="nav nav-underline text-white left">
+        <li class="nav-item">
+          <a class="nav-link text-white active" data-bs-toggle="tab" href="#websites">Websites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" data-bs-toggle="tab" href="#logos">Logos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" data-bs-toggle="tab" href="#digitalArtwork">Digital Artwork</a>
+        </li>
+      </ul>
+	<br>
+      <div class="tab-content d-flex justify-content-left">
+        <div class="tab-pane fade show active" id="websites">
+			<div class="card-container">
+				<div class="card">
+				<img src="Images/imaxCinema.png" alt="PortfolioWebsite">
+					<div class="card-content">
+					<h3>IMAX Cinema Website</h3>									
+					</div>
+				</div>		
+				<div class="card">
+				<img src="Images/Airline.png" alt="PortfolioWebsite">
+					<div class="card-content">
+					<h3>KLM Dutch Airlines Website</h3>										
+					</div>
+				</div>
+				<div class="card">
+				<img src="Images/naconMockup.jpg" alt="PortfolioWebsite">
+					<div class="card-content">
+					<h3>Nacon Gaming Website</h3>										
+					</div>
+				</div>
+				<div class="card">
+				<img src="Images/SunEco.png" alt="PortfolioWebsite">
+					<div class="card-content">
+					<h3>Sun Eco Travel Website</h3>										
+					</div>
+				</div>
+			</div>
+        </div>
+        <div class="tab-pane fade" id="logos">
+        <div class="card-container">
+				<div class="card">
+				<img src="Images/SunEcoLogo.png" alt="PortfolioWebsite">
+					<div class="card-content">
+					<h3>Sun Eco Travel Logo</h3>										
+					</div>
+				</div>
+				<div class="card">
+				<img src="Images/Logo.png" alt="PortfolioWebsite">
+					<div class="card-content">
+					<h3>My Digital Portfolio Logo</h3>					
+					</div>
+				</div>				
+				<div class="card">
+				<img src="Images/BGMLogo.png" alt="PortfolioWebsite">
+					<div class="card-content">
+					<h3>BMW & Lamborghini Combined Logo</h3>									
+					</div>
+				</div>				
+			</div>
+        </div>
+        <div class="tab-pane fade" id="digitalArtwork">
+     <div class="card-container">
+				<div class="card">
+				<img src="Images/collage03.1.jpg" alt="PortfolioWebsite">
+					<div class="card-content">
+					<h3>The Weeknd Collage</h3>										
+					</div>
+				</div>
+				<div class="card">
+				<img src="Images/island-Recovered.jpg" alt="PortfolioWebsite">
+					<div class="card-content">
+					<h3>Floating Island</h3>										
+					</div>
+				</div>
+				<div class="card">
+				<img src="Images/studentclubcard2.png" alt="PortfolioWebsite">
+					<div class="card-content">
+					<h3>KLM Airlines Student Club Card</h3>										
+					</div>
+				</div>
+				<div class="card">
+				<img src="Images/background2.jpg" alt="PortfolioWebsite">
+					<div class="card-content">
+					<h3>BMW Collage</h3>			
+					</div>
+				</div>			
+				<div class="card">
+				<img src="Images/ASTRONAUT.jpg" alt="PortfolioWebsite">
+					<div class="card-content">
+					<h3>Astronaut in space</h3>				
+					</div>
+				</div>				
+				<div class="card">
+				<iframe src="https://drive.google.com/file/d/1xz_QRt7NsQKMdjfKTVCMv_6AhGo3Ar5O/preview" width="100%" height="auto" allow="autoplay"></iframe>
+					<div class="card-content">
+					<h3>BMW & Lamborgini Promotional Video</h3>
+					</div>
+				</div>
+			</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  // Set the "Websites" tab as active when the page loads
+  document.addEventListener('DOMContentLoaded', function () {
+    var websitesTab = new bootstrap.Tab(document.querySelector('.nav-link.active'));
+    websitesTab.show();
+  });
+  
+
+</script>
+</section>
+<!--------------------- Work Section End ------------------------->
+<!--------------------- About Section Start ------------------------->
+<section id="About">
+<div class="container-width-about about-section">
+    <div class="container mt-5">
+		<div class="row g-4">
+        <div class="col-12">
+          <div class="section-text text-center top">ABOUT ME</div>
+        </div>
+      </div>
+      <ul class="nav nav-underline text-white left">
+        <li class="nav-item">
+          <a class="nav-link text-white active" data-bs-toggle="tab" href="#AboutMe">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" data-bs-toggle="tab" href="#Education">Education</a>
+        </li>
+      </ul>
+	<br>
+      <div class="tab-content mt-2">
+        <div class="tab-pane fade show active" id="AboutMe">
+      <div class="clearfix">
+  <img src="Images/astronautP.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="image">
+  <p>
+    Hi, I'm Raeesa, a dynamic web developer and UI/UX designer. With a blend of sharp coding skills and a keen eye for design, I bring ideas to life in the digital realm. My focus is on creating not just websites, but immersive and user-centric experiences.
+  </p>
+  <p>
+   In the world of web development, I thrive on crafting clean and functional code. From responsive layouts to backend magic, I love turning concepts into interactive realities. Every line of code contributes to a seamless digital journey for users, and I'm dedicated to making that journey exceptional.
+  </p>
+  <br>
+  <p><i><b>"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do." - Steve Jobs<b></i></p>
+</div>
+        </div>	
+        <div class="tab-pane fade" id="Education">
+			<div class="timeline">			
+				<div class="containerTimeline left-container">
+					<img src="Images/circle.png">
+					<div class="text-box">
+						<h2>High School - NSC</h2>
+						<small>2021</small>
+						<p>Completed high school at Darul Islam Islamic High School in 2021 and attained a bachelors pass at the end of matric</p>
+						<span class="left-container-arrow"></span>
+					</div>
+				</div>				
+				<div class="containerTimeline right-container">
+				<img src="Images/circle.png">
+					<div class="text-box">
+						<h2>MSITA Web Development Course</h2>
+						<small>2023</small>
+						<p>Completed the MSITA Web Development Course at Collage Of Cape Town.</p>
+						<span class="right-container-arrow"></span>
+					</div>
+				</div>				
+			</div>
+        </div>		
+      </div>
+    </div>
+  </div>
+  <script>
+  // Set the "Websites" tab as active when the page loads
+  document.addEventListener('DOMContentLoaded', function () {
+    var websitesTab = new bootstrap.Tab(document.querySelector('.nav-link.active'));
+    websitesTab.show();
+  });
+</script>
+</section>
+<!--------------------- About Section End ------------------------->
+<!--------------------- Contact Section Start ------------------------->
+<section id="Contact">
+	<div class="contact-container contact-section">	
+		<div class="contact-row">
+			<div class="contact-left">
+				<h1 class="section-text">Contact Me</h1>
+				<p><svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>&nbsp;&nbsp;raeesasamaai2@gmail.com</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" height="1.2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>&nbsp;&nbsp;072 170 0955</p>
+				<div class="social-icons">
+					<a href="https://www.facebook.com/profile.php?id=100083770120554&mibextid=ZbWKwL" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg></a>
+					<a href="https://www.instagram.com/raeesa_samaai/" class="icon"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+					<a href="https://github.com/raeesasamaai"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"/></svg></a>
+					<a href="https://www.behance.net/raeesasamaai24"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M186.5 293c0 19.3-14 25.4-31.2 25.4h-45.1v-52.9h46c18.6.1 30.3 7.8 30.3 27.5zm-7.7-82.3c0-17.7-13.7-21.9-28.9-21.9h-39.6v44.8H153c15.1 0 25.8-6.6 25.8-22.9zm132.3 23.2c-18.3 0-30.5 11.4-31.7 29.7h62.2c-1.7-18.5-11.3-29.7-30.5-29.7zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM271.7 185h77.8v-18.9h-77.8V185zm-43 110.3c0-24.1-11.4-44.9-35-51.6 17.2-8.2 26.2-17.7 26.2-37 0-38.2-28.5-47.5-61.4-47.5H68v192h93.1c34.9-.2 67.6-16.9 67.6-55.9zM380 280.5c0-41.1-24.1-75.4-67.6-75.4-42.4 0-71.1 31.8-71.1 73.6 0 43.3 27.3 73 71.1 73 33.2 0 54.7-14.9 65.1-46.8h-33.7c-3.7 11.9-18.6 18.1-30.2 18.1-22.4 0-34.1-13.1-34.1-35.3h100.2c.1-2.3.3-4.8.3-7.2z"/></svg></a>
+				</div>				
+			</div>
+			<div class="contact-right">
+				<form name="submit-to-google-sheet">
+					<input type="text" name="Name" placeholder="Enter your name" required>
+					<input type="email" name="Email" placeholder="Enter your email" required>
+					<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2">Submit</button>
+				</form>
+				<span id="msg"></span>
+			</div>
+		</div>
+	</div>	
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzuamJ5M-N49S7lUbr6va9gufxJQnfsInZ6nXK5E3oGV_64D49dZcAHe-nmjk-aF4NR/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+			msg.innerHTML = "Message sent successfully"
+			setTimeout(function(){
+				msg.innerHTML = ""
+			},5000)
+			form.reset()
+	  })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>	
+</section>
+<!--------------------- Contact Section End ------------------------->
+<div class="bottomText"> ©2023 – Raeesa Samaai | My Digital Portfolio</div>    
+<!--------------------- Responsive Script ------------------------->
+<script>
+  // Add this script to make all navbar links active when clicked
+  function closeMenuOnSmallScreen(link) {
+    const screenWidth = window.innerWidth;
+    if (screenWidth <= 768) { // Change 768 to your desired screen width breakpoint
+      const offcanvasNavbar = document.getElementById('offcanvasNavbar');
+      offcanvasNavbar.classList.remove('show'); // Close the offcanvas menu
+    }
+    // Remove 'active' class from all links
+    const navLinks = document.querySelectorAll('header nav a');
+    navLinks.forEach(navLink => {
+      navLink.classList.remove('active');
+    });
+    // Add 'active' class to the clicked link
+    link.classList.add('active');
+  }
+  
+  let sections = document.querySelectorAll('section');
+  let navLinks = document.querySelectorAll('header nav a');
+  
+  window.onscroll = () => {
+    sections.forEach(sec => {
+      let top = window.scrollY;
+      let offset = sec.offsetTop - 150;
+      let height = sec.offsetHeight;
+      let id = sec.getAttribute('id');
+      
+      if (top >= offset && top < offset + height) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+        });
+        
+        document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+      }
+    });
+  };
+</script>
+</body>
+</html>
